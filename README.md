@@ -13,14 +13,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+link naar de website: https://stach-food.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Home pagina van Stach 
 <img src="images/stach-home.png" width="375px" alt="Home pagina van Stach in smallscreen">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+Nieuwe producten pagina van Stach 
 <img src="images/stach-nieuw.png" width="375px" alt="Pagina Stach met nieuwe producten">
  
 </details>
