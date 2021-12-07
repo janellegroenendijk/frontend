@@ -17,11 +17,11 @@ link naar de website die je gaat namaken óf de naam/omschrijving van je eigen o
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/stach-home.png" width="375px" alt="Home pagina van Stach in smallscreen">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/stach-nieuw.png" width="375px" alt="Pagina Stach met nieuwe producten">
  
 </details>
 
