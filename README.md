@@ -79,8 +79,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
+1. Tess Smit hulp met logo kloppend krijgen in de navigatiebalk.
+2. CSS-tricks hulp met verschil tussen em en rem: https://css-tricks.com/confused-rem-em/
 3. ...
 
 </details>
