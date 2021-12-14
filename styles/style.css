@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+/*Algemene styling*/
+
 @font-face {
     font-family: 'Calafornia';
     src: url(../fonts/california.ttf);
@@ -16,6 +18,25 @@
     font-family: 'roboto';
     src: url(../fonts/Roboto-Thin.ttf);
 }
+
+main {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0rem;
+}
+
+h1 {
+    display: none;
+}
+
+h1,
+h2 {
+    font-family: 'Calafornia', sans-serif;
+    color: black;
+}
+
+/*Navigatie styling*/
 
 nav {
     background-color: white;
@@ -31,13 +52,13 @@ nav {
 }
 
 nav ul {
-    margin-left: 400px;
+    margin-left: 25rem;
 
 }
 
 nav ul li {
     display: inline-block;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 
 }
 
@@ -48,53 +69,45 @@ nav ul li a {
 
 }
 
+/*Section styling*/
+
+.ondertitel {
+    font-family: 'Calafornia', sans-serif;
+}
+
+/*detail styling*/
 #bestelonline {
     background-color: yellow;
-    padding-top: 7px;
+    padding-top: 0.438rem;
 
 }
 
 #logo {
-    padding-top: 0px;
-    margin-left: 250px;
+    padding-top: 0rem;
+    margin-left: 15.625rem;
     width: 10%;
     z-index: 1;
     position: fixed;
 
 }
 
-main {
-    font-family: 'roboto', sans-serif;
-    color: black;
-    text-align: center;
-    margin: 0px;
-}
-
-h1,
-h2 {
-    font-family: 'Calafornia', sans-serif;
-    color: black;
-}
-
 #snack {
     height: 100%;
     width: 100%;
-    max-height: 500px;
+    max-height: 31.25rem;
     object-fit: cover;
+}
+
+#section-lekkerbezig {
+    width:
 }
 
 #lekkerbezig {
     font-size: 5em;
     background-color: white;
-    margin-top: -120px;
+    margin-top: -7.5rem;
     z-index: 1;
     position: relative;
     display: inline-block;
     width: 30%;
 }
-
-.ondertitel {
-    font-family: 'Calafornia', sans-serif;
-}
-
-p {}

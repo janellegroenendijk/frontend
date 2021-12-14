@@ -13,15 +13,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website: https://stach-food.nl
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Home pagina van Stach 
-<img src="images/stach-home.png" width="375px" alt="Home pagina van Stach in smallscreen">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Nieuwe producten pagina van Stach 
-<img src="images/stach-nieuw.png" width="375px" alt="Pagina Stach met nieuwe producten">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -79,10 +79,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. Tess Smit hulp met logo kloppend krijgen in de navigatiebalk.
-2. Hulp met verschil tussen em en rem: https://zellwk.com/blog/rem-vs-em/
-3. Omrekenen px naar rem: https://nekocalc.com/px-to-rem-converter
-4. CSS volgorde: https://codepen.io/joostf/pen/xEpmLx
- 
+1. bron 1
+2. bron 2
+3. ...
 
 </details>
