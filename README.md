@@ -79,8 +79,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Tess Smit hulp met logo kloppend krijgen in de navigatiebalk.
+2. Hulp met verschil tussen em en rem: https://zellwk.com/blog/rem-vs-em/
+3. Omrekenen px naar rem: https://nekocalc.com/px-to-rem-converter
+4. CSS volgorde: https://codepen.io/joostf/pen/xEpmLx
 
 </details>
