@@ -49,6 +49,7 @@ nav {
     width: 100%;
     position: fixed;
     float: right;
+    z-index: 1;
 }
 
 nav ul {
@@ -73,6 +74,7 @@ nav ul li a {
 
 .ondertitel {
     font-family: 'Calafornia', sans-serif;
+    font-size: 2.4rem;
 }
 
 /*detail styling*/
@@ -98,16 +100,34 @@ nav ul li a {
     object-fit: cover;
 }
 
-#section-lekkerbezig {
-    width:
-}
 
 #lekkerbezig {
     font-size: 5em;
     background-color: white;
-    margin-top: -7.5rem;
-    z-index: 1;
+    margin-top: -9rem;
+    margin-bottom: 0;
     position: relative;
     display: inline-block;
     width: 30%;
+    overflow: auto;
+}
+
+#streep {
+    position: absolute;
+    background-color: black;
+    width: 50rem;
+    height: 0.2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    min-width: 10rem;
+    max-width: 50rem;
+    margin-top: 5.5rem;
+}
+
+#section-lekkerbezig {
+    position: relative;
+    margin: 0em 20em 0em 20em;
+    min-width: 10em;
+    max-width: 50em;
+    align-content: center;
 }
