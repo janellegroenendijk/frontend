@@ -24,6 +24,13 @@ main {
     color: black;
     text-align: center;
     margin: 0rem;
+    display: block;
+}
+
+footer {
+    font-family: 'roboto', sans-serif;
+    background-color: #f5c242;
+    margin-top: 2rem;
 }
 
 h1 {
@@ -34,7 +41,9 @@ h1,
 h2 {
     font-family: 'Calafornia', sans-serif;
     color: black;
+    margin-bottom: 0;
 }
+
 
 /*Navigatie styling*/
 
@@ -60,7 +69,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding-right: 0.625rem;
-
 }
 
 
@@ -70,14 +78,44 @@ nav ul li a {
 
 }
 
-/*Section styling*/
+/*class styling*/
+
+/*Algemeen*/
 
 .ondertitel {
     font-family: 'Calafornia', sans-serif;
     font-size: 2.4rem;
 }
 
-/*detail styling*/
+a.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #000000;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button1:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+/*footer*/
+.footer-tekst {
+    text-align: left;
+    justify-content: center;
+}
+
+/*id styling*/
+
+/*Navigatie*/
 #bestelonline {
     background-color: yellow;
     padding-top: 0.438rem;
@@ -100,6 +138,7 @@ nav ul li a {
     object-fit: cover;
 }
 
+/*Eerste sectie*/
 
 #lekkerbezig {
     font-size: 5em;
@@ -130,4 +169,105 @@ nav ul li a {
     min-width: 10em;
     max-width: 50em;
     align-content: center;
+}
+
+#lekkerbezig-content {
+    margin-top: 2rem;
+}
+
+/*Tweede sectie*/
+
+#stach-app {
+    justify-content: center;
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+
+}
+
+#content-app {
+    display: inline-block;
+    position: absolute;
+    overflow: auto;
+    margin-top: 10rem;
+    background-color: white;
+    width: 30%;
+    /*    top: 50%;*/
+    left: 35%;
+}
+
+#app-streep {
+    position: absolute;
+    background-color: black;
+    overflow: auto;
+    width: 5rem;
+    height: 0.1rem;
+    margin-top: 15.5rem;
+    left: 47%;
+}
+
+/*Derde sectie*/
+
+#sectie-roze {
+    margin-top: 2rem;
+    width: 100%;
+    height: 40rem;
+    background-color: lightpink;
+}
+
+#locaties-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*    grid-gap: 10px;*/
+    margin-top: -40rem;
+
+}
+
+#locaties-foto {
+    width: 60%;
+    align-self: stretch;
+    left: 35%;
+}
+
+#content-locaties {
+    background-color: white;
+    text-align: center;
+    width: 60%;
+    align-self: stretch;
+
+}
+
+/*vierde sectie*/
+
+#werken-section {
+    display: block;
+    margin-top: 15rem;
+}
+
+#content-werken {
+    display: inline-block;
+    position: absolute;
+    overflow: auto;
+    margin-top: 10rem;
+    background-color: white;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+}
+
+/*Footer*/
+
+#logo-footer {
+    width: 10%;
+}
+
+#nieuwsbrief {}
+
+#footer-icons img {
+    /*
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+*/
+    width: 5%;
+
 }
