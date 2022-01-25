@@ -1,5 +1,4 @@
 /* CSS Document */
-/*Alles in em ipv px*/
 
 *,
 *::after,
@@ -7,43 +6,43 @@
     box-sizing: border-box;
 }
 
-/*Algemene styling*/
+/*ALLE PAGINA'S*/
 
 @font-face {
-    font-family: 'Calafornia';
+    font-family: "Calafornia";
     src: url(../fonts/california.ttf);
 }
 
 @font-face {
-    font-family: 'roboto';
+    font-family: "roboto";
     src: url(../fonts/Roboto-Thin.ttf);
 }
 
 main {
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
     color: black;
     text-align: center;
     margin: 0rem;
     display: block;
 }
 
-footer {
-    font-family: 'roboto', sans-serif;
-    background-color: #f5c242;
-    margin-top: 2rem;
-}
-
-h1 {
-    display: none;
+body {
+    margin: 0;
 }
 
 h1,
 h2 {
-    font-family: 'Calafornia', sans-serif;
+    font-family: "Calafornia", sans-serif;
     color: black;
     margin-bottom: 0;
 }
 
+footer {
+    font-family: "roboto", sans-serif;
+    background-color: #ffd900;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
 
 /*Navigatie styling*/
 
@@ -51,7 +50,7 @@ nav {
     background-color: white;
     color: black;
     list-style: none;
-    font-family: 'Calafornia', sans-serif;
+    font-family: "Calafornia", sans-serif;
     text-transform: uppercase;
     font-size: 1.7em;
     top: 0;
@@ -63,7 +62,6 @@ nav {
 
 nav ul {
     margin-left: 25rem;
-
 }
 
 nav ul li {
@@ -71,19 +69,31 @@ nav ul li {
     padding-right: 0.625rem;
 }
 
-
 nav ul li a {
     text-decoration: none;
     color: black;
-
 }
 
-/*class styling*/
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-/*Algemeen*/
+/*CLASS STYLING ALLE PAGINA'S*/
 
+/*Visually hidden*/
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/*Body*/
 .ondertitel {
-    font-family: 'Calafornia', sans-serif;
+    font-family: "Calafornia", sans-serif;
     font-size: 2.4rem;
 }
 
@@ -95,7 +105,7 @@ a.button1 {
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: #000000;
     text-align: center;
@@ -103,23 +113,35 @@ a.button1 {
 }
 
 a.button1:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #000000;
+}
+
+a.actief {
+    background-color: #ffd900;
+}
+
+.winkel-item {
+    max-width: 941px;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 /*footer*/
 .footer-tekst {
-    text-align: left;
-    justify-content: center;
+    font-size: 0.8rem;
+    margin: 0;
 }
 
-/*id styling*/
+/*ID STYLING ALLE PAGINA'S*/
 
 /*Navigatie*/
 #bestelonline {
     background-color: yellow;
     padding-top: 0.438rem;
-
 }
 
 #logo {
@@ -128,9 +150,20 @@ a.button1:hover {
     width: 10%;
     z-index: 1;
     position: fixed;
+}
+
+#nieuwsbrief input {
+    background-color: #ffd900;
+    border-color: #000000;
+    border-width: 0.12em;
 
 }
 
+
+
+/*HOMEPAGINA*/
+
+/*Eerste sectie*/
 #snack {
     height: 100%;
     width: 100%;
@@ -138,41 +171,31 @@ a.button1:hover {
     object-fit: cover;
 }
 
-/*Eerste sectie*/
-
 #lekkerbezig {
     font-size: 5em;
     background-color: white;
     margin-top: -9rem;
-    margin-bottom: 0;
+    padding: 1rem 1rem 0;
     position: relative;
     display: inline-block;
-    width: 30%;
     overflow: auto;
 }
 
-#streep {
-    position: absolute;
-    background-color: black;
-    width: 50rem;
-    height: 0.2rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    min-width: 10rem;
-    max-width: 50rem;
-    margin-top: 5.5rem;
+#section-lekkerbezig {
+    max-width: 941px;
+    margin: 0 auto;
 }
 
-#section-lekkerbezig {
-    position: relative;
-    margin: 0em 20em 0em 20em;
-    min-width: 10em;
-    max-width: 50em;
-    align-content: center;
+#section-lekkerbezig h2 {
+    border-bottom: 2px solid black;
+    margin: 2rem auto;
 }
 
 #lekkerbezig-content {
     margin-top: 2rem;
+    padding: 0 4rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
 }
 
 /*Tweede sectie*/
@@ -182,92 +205,413 @@ a.button1:hover {
     display: block;
     position: relative;
     margin-top: 2rem;
-
 }
 
 #content-app {
     display: inline-block;
     position: absolute;
-    overflow: auto;
-    margin-top: 10rem;
     background-color: white;
-    width: 30%;
-    /*    top: 50%;*/
-    left: 35%;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-#app-streep {
-    position: absolute;
-    background-color: black;
-    overflow: auto;
-    width: 5rem;
-    height: 0.1rem;
-    margin-top: 15.5rem;
-    left: 47%;
+#stach-app img {
+    max-width: 60%;
 }
 
 /*Derde sectie*/
 
-#sectie-roze {
-    margin-top: 2rem;
-    width: 100%;
-    height: 40rem;
-    background-color: lightpink;
-}
-
 #locaties-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*    grid-gap: 10px;*/
-    margin-top: -40rem;
-
+    width: 100vw;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
 #locaties-foto {
-    width: 60%;
+    width: 431px;
     align-self: stretch;
     left: 35%;
 }
 
 #content-locaties {
+    padding: 2rem 0;
     background-color: white;
-    text-align: center;
-    width: 60%;
-    align-self: stretch;
-
+    width: 431px;
+    height: 431px;
 }
 
 /*vierde sectie*/
 
 #werken-section {
+    justify-content: center;
     display: block;
-    margin-top: 15rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+#werken-section p {
+    color: black;
+}
+
+#werken-section a img {
+    max-width: 60%;
 }
 
 #content-werken {
     display: inline-block;
     position: absolute;
-    overflow: auto;
-    margin-top: 10rem;
     background-color: white;
-    width: 20%;
-    height: 15%;
-    left: 40%;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /*Footer*/
 
-#logo-footer {
-    width: 10%;
+#footer-container {
+    max-width: 941px;
+    display: flex;
+    margin: auto;
+    border-top: 1px solid black;
 }
 
-#nieuwsbrief {}
+#footer-container > section {
+    margin-left: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#footer-container section div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+#logo-footer {
+    width: 101px;
+    height: 101px;
+}
+
+#nieuwsbrief {
+    padding: 2rem 0;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#footer-icons {
+    margin: 0;
+    padding: 0;
+}
 
 #footer-icons img {
-    /*
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-*/
-    width: 5%;
+    width: 33px;
+    height: 33px;
+}
 
+
+
+
+/* WINKELS PAGINA */
+
+/*Id styling*/
+#image-winkelheader {
+    width: 100%;
+    object-fit: cover;
+}
+
+#winkels-content {
+    max-width: 941px;
+    margin: 0 auto;
+}
+
+#winkels-content h2 {
+    border-bottom: 2px solid black;
+    max-width: 22rem;
+    margin: 2rem auto;
+}
+
+#corona-content {
+    font-weight: bold;
+}
+
+#winkels-buttons {
+    margin-top: 4rem;
+}
+
+#winkel-content h1 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+}
+
+#winkel-content p {
+    font-size: 0.8rem;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#winkel-content a {
+    margin: 1rem;
+}
+
+/*class styling*/
+.winkel-adres {
+    padding: 0.4rem 0;
+}
+
+/* WINKEL FOTO SLIDER code van: https://www.educba.com/javascript-image-slider/ */
+
+.showSlider {
+    display: block;
+    width: 457px;
+}
+
+.showSlider img {
+    width: 100%;
+}
+
+.slider-container {
+    width: 457px;
+    position: relative;
+    margin: auto;
+}
+
+.left,
+.right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.left:hover,
+.right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/*RESPONSIVE TABLET*/
+
+@media screen and (max-width: 768px) {
+    /*ALLE PAGINA'S*/
+    /*    navigatie*/
+
+    nav {
+        height: 4rem;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    /*    ID STYLING*/
+    #logo {
+        margin: 0;
+        width: 15%;
+    }
+
+    /*    sectie 1*/
+    #locaties-foto {
+        max-width: 50%;
+        max-height: 368px;
+    }
+
+    #content-locaties {
+        max-height: 368px;
+    }
+
+    #lekkerbezig {
+        padding-bottom: 0;
+    }
+
+    #lekkerbezig-content {
+        font-size: 1.1em;
+    }
+
+    /*    sectie 2*/
+    #stach-app img {
+        max-width: 100%;
+    }
+
+    /*    sectie 3*/
+    #locaties-section {
+        padding: 3rem 1rem;
+    }
+
+    /*  sectie 4 */
+    #werken-section a img {
+        max-width: 100%;
+    }
+
+    /*    CLASS STYLING*/
+    .ondertitel {
+        font-size: 1.5em;
+    }
+
+    /* winkel pagina */
+    .slider-container {
+        width: 50vw;
+    }
+
+    .showSlider {
+        width: 50vw;
+    }
+
+    .winkel-adres {
+        margin: 0;
+    }
+
+    .winkel-item img {
+        width: 50vw;
+    }
+}
+
+
+
+
+
+/* RESPONSIVE MOBIEL */
+
+@media screen and (max-width: 414px) {
+
+    /*    ALLE PAGINA'S*/
+    /*    navigatie*/
+    nav {
+        height: 4rem;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    /*    ID STYLING*/
+    #logo {
+        margin: 0 1rem;
+        width: 30%;
+    }
+
+    /*    Homepagina*/
+    /*    sectie 1*/
+
+    #locaties-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #locaties-foto {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #content-locaties {
+        max-width: 100%;
+    }
+
+    #content-locaties .ondertitel {
+        margin: 1em auto;
+        font-size: 1.5em;
+    }
+
+    #lekkerbezig {
+        font-size: 2em;
+    }
+
+
+    /*    sectie 2*/
+    #content-app {
+        padding: 0 1rem;
+        width: 75%;
+    }
+
+    /*    footer*/
+    #footer-container {
+        flex-direction: column;
+    }
+
+    #footer-container section {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    /*CLASS STYLING*/
+    /*    Alle pagina's*/
+    .ondertitel {
+        font-size: 1em;
+        max-width: 50%;
+    }
+
+    /* Winkelpagina */
+    .winkel-item {
+        flex-direction: column;
+    }
+
+    .slider-container {
+        width: 100vw;
+    }
+
+    .showSlider {
+        width: 100vw;
+    }
+
+    .winkel-item img {
+        width: 100vw;
+    }
 }

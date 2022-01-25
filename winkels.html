@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Janelle Groenendijk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Winkels</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
+</head>
+
+<body>
+    <header>
+        <!--       NAVIGATIE-->
+        <nav>
+            <ul>
+                <li> <a href="winkels.html">Winkels</a></li>
+                <li><a href="">Over ons</a></li>
+                <li><a href="">Nieuw</a></li>
+                <li><a href="">Werken bij</a></li>
+                <li><a href="">Stach app</a></li>
+                <li><a href="">Contact</a></li>
+                <li id="bestelonline"><a href="">Bestel online</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" alt="logo Statch" id="logo">
+
+    </header>
+    <main>
+        <!--       HEADER-->
+        <section>
+            <img id="image-winkelheader" src="images/winkels.header.jpeg" alt="">
+            <h1 id="lekkerbezig">Lekker in de buurt</h1>
+        </section>
+
+        <!--       INHOUD-->
+        <!--   <section1 -->
+        <section id="winkels-content">
+            <h2 class="ondertitel">Onze winkels</h2>
+            <p id="lekkerbezig-content">Onze winkels zijn open! ⁠Klik hier voor de STACH safety rules die we hanteren in onze winkels. Voor de STACH burgerbar in Overveen kun je online vooraf reserveren of kom langs voor take-away koffie, sandwiches en de lekkerste burgers.</p>
+            <p id="corona-content">In verband met de huidige Coronamaatregelen zijn onze winkels dagelijks geopend tot uiterlijk 20.00 uur.</p>
+        </section>
+
+        <!--    Buttons-->
+        <section id="winkels-buttons">
+            <h2 class="visually-hidden">Verschillende winkels</h2>
+            <a href="" class="button1 actief">Alle winkels</a>
+            <a href="" class="button1">Den Haag</a>
+            <a href="" class="button1">Almere</a>
+            <a href="" class="button1">Bestel online</a>
+        </section>
+
+        <article class="winkel-item">
+            <h2 class="visually-hidden">Foto slideshow</h2>
+
+            <!-- AFBEELDING SLIDER code van: https://www.educba.com/javascript-image-slider/ -->
+            <div class="slider-container">
+                <div class="showSlider fade">
+                    <img src="images/winkels/winkel1-foto1.jpeg" alt="" />
+                </div>
+                <div class="showSlider fade">
+                    <img src="images/winkels/winkel1-foto2.jpeg" alt="" />
+                </div>
+                <!-- Navigation arrows -->
+                <a class="left" onclick="nextSlide(-1)">❮</a>
+                <a class="right" onclick="nextSlide(1)">❯</a>
+            </div>
+
+            <!--            Amsterdam locatie-->
+            <section class="winkel-content">
+                <h2>Amsterdam / B. Amsterdam / B.1 / Winkel</h2>
+                <p class="winkel-adres">Johan Huizingalaan 763a</p>
+                <p class="winkel-adres">1066 VH Amsterdam</p>
+                <p class="winkel-adres">020 - 2614703</p>
+                <p class="winkel-adres">ma - vr 08:30 - 16:00</p>
+                <a href="" class="button1">Google Maps</a>
+                <p>Vanaf heden is STACH ook te vinden bij B. Amsterdam! Haal voortaan je je ontbijt, koffie, lunch of (gezonde) snack bij de STACH-winkel in de creative office & coworking spaces van B.1 Amsterdam. </p>
+            </section>
+        </article>
+
+        <!--       Amsterdam locatie 2-->
+        <article class="winkel-item">
+            <h2 class="visually-hidden">Winkel Amsterdam</h2>
+            <img src="images/winkels/winkel2-foto2.jpeg" alt="Stach winkel">
+            <section class="winkel-content">
+                <h2>Amsterdam / B. Amsterdam / B.3 / Winkel</h2>
+                <p class="winkel-adres">Johan Huizingalaan 400</p>
+                <p class="winkel-adres">1066 JS Amsterdam</p>
+                <p class="winkel-adres">020 - 2614703</p>
+                <p class="winkel-adres">ma - vr 08:30 - 15:00</p>
+                <a href="" class="button1">Google Maps</a>
+                <p>In het B.3-gebouw van B. Amsterdam vind je een gezellige STACH-koffiecorner. Haal hier je je favoriete sandwiches, koffie of (gezonde snack). </p>
+            </section>
+        </article>
+    </main>
+
+    <!--    FOOTER-->
+    <footer>
+        <div id="footer-container">
+            <img id="logo-footer" src="images/logo2.png" alt="logo stach">
+            <section>
+                <!--               informatie-->
+                <h2 class="visually-hidden">Contact informatie</h2>
+                <p class="footer-tekst">Het leukste contact hebben we natuurlijk in de winkels!</p>
+                <p class="footer-tekst">Voor overige vragen kun je altijd mailen naar hallo@stach-food.nl.</p>
+                <p class="footer-tekst">We staan graag voor je klaar!</p>
+
+                <!--                Inschrijven nieuwsbrief-->
+                <form id="nieuwsbrief" action="type">
+                    <label>Schrijf je in voor de nieuwsbrief</label>
+                    <input type="text">
+                    <input type="submit" value="Versturen">
+                </form>
+                <div>
+
+                    <!--                   Socialmedia-->
+                    <a href="https://stach-food.nl/bestel-online/" class="button1">Bestel online</a>
+                    <section id="footer-icons">
+                        <h2 class="visually-hidden">Socialmedia iconen</h2>
+                        <a href="https://www.facebook.com/STACH.food">
+                            <img src="images/facebook-logo.png" alt="Facebook Stach">
+                        </a>
+                        <a href="https://www.instagram.com/stach_food/">
+                            <img src="images/instagram.png" alt="Instagram Stach">
+                        </a>
+                        <a href="https://deliveroo.nl/nl/">
+                            <img src="images/deliveroo-logo.png" alt="Deliveroo">
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

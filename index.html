@@ -14,15 +14,17 @@
 
 <body>
     <header>
+
+        <!--    NAVIGATIE-->
         <nav>
             <ul>
-                <li> <a href="">Winkels</a></li>
+                <li> <a href="winkels.html">Winkels</a></li>
                 <li><a href="">Over ons</a></li>
                 <li><a href="">Nieuw</a></li>
                 <li><a href="">Werken bij</a></li>
                 <li><a href="">Stach app</a></li>
                 <li><a href="">Contact</a></li>
-                <li id="bestelonline"><a href="">Bestel online</a></li>
+                <li id="bestelonline"><a href="bestelonline.html">Bestel online</a></li>
             </ul>
         </nav>
 
@@ -31,13 +33,11 @@
     </header>
     <main>
 
+        <!--      PAGINA HEADER -->
         <section>
-            <img src="images/snackjes.jpeg" alt="Snack overzicht" id="snack">
+            <img src="images/snackjes.jpeg" alt="Snack overzicht" id="snack" />
             <h1 id="lekkerbezig">Lekker bezig</h1>
         </section>
-
-        <div id="streep">
-        </div>
 
         <!--sectie 1-->
         <section id="section-lekkerbezig">
@@ -51,12 +51,8 @@
                 <h2>Nu: de Stach app in heel Amsterdam!</h2>
                 <p>Download 'm nu &amp; krijg de eerste koffie van ons!</p>
             </div>
-            <div id="app-streep">
-            </div>
-            <img src="images/stachapp.winkel.jpeg" alt="Applicatie">
+            <img src="images/stachapp.winkel.jpeg" alt="Applicatie" id="app-foto">
         </section>
-
-        <div id="sectie-roze"></div>
 
         <!--       sectie 3-->
         <section id="locaties-section">
@@ -71,40 +67,54 @@
 
         <!--       sectie 4-->
         <section id="werken-section">
-            <div id="content-werken">
-                <h2>Weet je wat ook lekker is?</h2>
-                <p>Kom bij ons werken</p>
-            </div>
-            <div id="app-streep">
-            </div>
             <a href="https://stach-food.nl/werken-bij/">
+                <div id="content-werken">
+                    <h2>Weet je wat ook lekker is?</h2>
+                    <p>Kom bij ons werken</p>
+                </div>
                 <img src="images/medewerkers-home.jpeg" alt="Blije medewerkers">
             </a>
         </section>
     </main>
 
+    <!--    FOOTER-->
+
     <footer>
-        <img id="logo-footer" src="images/logo2.png" alt="logo stach">
-        <p class="footer-tekst">Het leukste contact hebben we natuurlijk in de winkels!</p>
-        <p class="footer-tekst">Voor overige vragen kun je altijd mailen naar hallo@stach-food.nl.</p>
-        <p class="footer-tekst">We staan graag voor je klaar!</p>
-        <form id="nieuwsbrief" action="">
-            <label for="Nieuwsbrief">Schrijf je in voor de nieuwsbrief</label>
-            <input type="text">
-            <input type="submit" value="Versturen">
-        </form>
-        <a href="https://stach-food.nl/bestel-online/" class="button1">Bestel online</a>
-        <section id="footer-icons">
-            <a href="https://www.facebook.com/STACH.food">
-                <img src="images/facebook-logo.png" alt="Facebook Stach">
-            </a>
-            <a href="https://www.instagram.com/stach_food/">
-                <img src="images/instagram.png" alt="Instagram Stach">
-            </a>
-            <a href="https://deliveroo.nl/nl/">
-                <img src="images/deliveroo-logo.png" alt="Deliveroo">
-            </a>
-        </section>
+        <div id="footer-container">
+            <img id="logo-footer" src="images/logo2.png" alt="logo stach">
+
+            <section>
+                <!--               Informatie-->
+                <h2 class="visually-hidden">Contact informatie</h2>
+                <p class="footer-tekst">Het leukste contact hebben we natuurlijk in de winkels!</p>
+                <p class="footer-tekst">Voor overige vragen kun je altijd mailen naar hallo@stach-food.nl.</p>
+                <p class="footer-tekst">We staan graag voor je klaar!</p>
+
+                <!--                Nieuwsbrief inschrijven-->
+                <form id="nieuwsbrief" action="type">
+                    <label>Schrijf je in voor de nieuwsbrief</label>
+                    <input type="text" value="E-mailadres">
+                    <input type="submit" value="Versturen">
+                </form>
+                <div>
+
+                    <!--                   Socialmedia-->
+                    <a href="https://stach-food.nl/bestel-online/" class="button1">Bestel online</a>
+                    <section id="footer-icons">
+                        <h2 class="visually-hidden">Iconen social media</h2>
+                        <a href="https://www.facebook.com/STACH.food">
+                            <img src="images/facebook-logo.png" alt="Facebook Stach">
+                        </a>
+                        <a href="https://www.instagram.com/stach_food/">
+                            <img src="images/instagram.png" alt="Instagram Stach">
+                        </a>
+                        <a href="https://deliveroo.nl/nl/">
+                            <img src="images/deliveroo-logo.png" alt="Deliveroo">
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
     </footer>
 
     <script src="scripts/script.js"></script>
