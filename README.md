@@ -21,7 +21,7 @@ Home pagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Nieuwe prodcuten pagina  
-<img src="images/stach-nieuw.png" width="375px" alt="Nieuwe producten mobiel">
+<img src="images/stach-winkels.png" width="375px" alt="Nieuwe producten mobiel">
  
 </details>
 
